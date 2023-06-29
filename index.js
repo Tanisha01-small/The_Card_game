@@ -1,17 +1,23 @@
 
 let firstCard=4;
-let secondCard=17;
+let secondCard=15;
 let sumTwoCards= firstCard+secondCard;
 let bJ=false;
 let isAlive=true;
+let message="";
+let messageEl=document.getElementById("message-el");
 
-if(sumTwoCards<=20){
-    console.log("Do you want to draw a new card 🙂");
-    isAlive=truel;
-}else if(sumTwoCards===21){
-    console.log("Woohooo !!! 🥳");
-    bJ=true;
-}else{
-    console.log("You lost !!! 😭");
-    isAlive=false;
+
+function start(){
+    if(sumTwoCards<=20){
+        message ="Do you want to draw a new card";
+        isAlive=true;
+    }else if(sumTwoCards===21){
+        message="Woohooo !!!";
+        bJ=true;
+    }else{
+        message="You lost !!!";
+        isAlive=false;
+    }
+    messageEl.textContent=message;
 }
