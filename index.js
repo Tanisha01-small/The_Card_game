@@ -11,7 +11,15 @@ let cardsEl=document.getElementById("cards-el")
 let cards=[firstCard,secondCard];
 
 function getRandomCard(){
-    return Math.random();
+    let randomNumber=Math.floor(Math.random()*13)+1;
+
+    if(Math.floor(randomNumber ===1)){
+        return 11;
+    }else if( randomNumber>10){
+        return 10;
+    }else{
+        return randomNumber;
+    }
 }
 
 

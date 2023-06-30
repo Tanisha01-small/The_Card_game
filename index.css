@@ -23,7 +23,13 @@ p{
     margin-top:40px;
     color:white;
     font-size:150%;
-    font-family:cursive
+    font-family:cursive;
+   
+}
+
+#cards-el{
+    margin-left:30%;
+    margin-right:30%;
 }
 
 button{
