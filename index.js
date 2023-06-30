@@ -1,23 +1,24 @@
+let firstCard = 10
+let secondCard = 4
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.querySelector("#message-el")
+//let sumEl=document.getElementById("sum-el");
+let sumEl=document.querySelector("#sum-el");
 
-let firstCard=4;
-let secondCard=15;
-let sumTwoCards= firstCard+secondCard;
-let bJ=false;
-let isAlive=true;
-let message="";
-let messageEl=document.getElementById("message-el");
+function start() {
 
-
-function start(){
-    if(sumTwoCards<=20){
-        message ="Do you want to draw a new card";
-        isAlive=true;
-    }else if(sumTwoCards===21){
-        message="Woohooo !!!";
-        bJ=true;
-    }else{
-        message="You lost !!!";
-        isAlive=false;
+    sumEl.textContent="Sum:"+sum;
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
     }
-    messageEl.textContent=message;
+    message=messageEl.textContent;
 }
