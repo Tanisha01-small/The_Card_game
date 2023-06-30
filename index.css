@@ -30,12 +30,13 @@ button{
     color:goldenrod;
     padding-top:10px;
     padding-bottom:10px;
-    background: transparent;
+    background-color:rgb(21, 134, 21);
     font-weight:bold;
     width:150px;
     margin-bottom:5px;
     margin-top:20px;
+    margin-left:30px;
     border-radius:200px;
     cursor:pointer;
-    border:2px solid rgb(227, 15, 15)
+    border:2px solid rgb(8, 8, 8)
 }
