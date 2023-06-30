@@ -46,3 +46,32 @@ button{
     cursor:pointer;
     border:2px solid rgb(8, 8, 8)
 }
+
+@media only screen and (max-width:600px){
+
+    
+    div{
+        text-align:center;
+        margin-top:50%;
+    
+        margin:auto;
+    }
+
+    h1{
+        font-size:25px;
+    }
+
+    p{
+        font-size:20px;
+    }
+
+    button{
+        padding-top:5px;
+        padding-bottom:5px;
+        font-weight:bold;
+        width:120px;
+        margin-bottom:10px;
+        border-radius:100px;
+        cursor:pointer;
+    }
+}
